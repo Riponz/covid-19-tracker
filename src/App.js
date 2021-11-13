@@ -4,6 +4,7 @@ import { MenuItem, FormControl, Select, Card, CardContent } from "@material-ui/c
 import InfoButton from './InfoButton';
 import Table from './Table'
 import { sortData } from "./utils";
+import Linegraph from './Linegraph'
 
 
 function App() {
@@ -102,8 +103,10 @@ function App() {
             total={countryInfo.deaths} />
         </div>
 
-
-        {/* <Map/> */}
+        <div className='app__linegraph'>
+          <h3>Worldwide last 120 Graph</h3>
+          <Linegraph className='graph' casesType='cases' />
+        </div>
 
       </div>
 
