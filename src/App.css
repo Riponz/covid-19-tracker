@@ -4,25 +4,50 @@ body {
 
 .app__left {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
 }
 
 .app__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .header__dropdown {
   background-color: white;
 }
+.app__infobuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media only screen and (max-width: 700px) {
-  .app__left {
+.app {
+  display: flex;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__right {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .app__infobuttons {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+
+  .app__right{
+    
   }
 }
